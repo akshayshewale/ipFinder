@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link href="material.css" type="text/css" rel="stylesheet">
+    <script src="main.js" async></script>
+    <script src="helper.js" async></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand-logo center">IP ADDRESS INFO</li>
+        </ul>
+    </nav>
+    <div class="row container" id="details">
+        <div class="card col s12 m12 l12">
+            <div id="infos">
+                <div class="input-field col s12 m6 l6">
+                    <!--                    <input type="text" id="ipToCheck" placeholder="enter an ip to check(leave blank for all ips)" value="192.168.1.8">-->
+                    <input type="text" id="ipToCheck" placeholder="enter an ip to check(leave blank for all ips)">
+                    <label for="ipToCheck"></label>
+
+                </div>
+                <h5 id="testingIp" class="col s12 m6 l6 center red-text"></h5>
+                <div class="col s12 m12 l12">
+                    <center><b id="timeElapsed"></b><br><b id="ipInfo"></b><br><b id="percentDoneShow"></b></center>
+                    <div class='progress'>
+                        <div class='determinate' style='width:0%;' id='percentDone'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field col s12 m12 l12 center">
+                <button class="btn red" type="button" onclick="start();">
+                    Click To Start
+                </button>
+            </div>
+            <div class="col s12 m12 l12">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row container" id="output">
+        <div class="card col s12 m12 l12">
+            <div id="filters" class="container">
+
+            </div>
+            <div id="links" class="center container">
+                <h4>
+                    Hello World!!!<br>
+                    Data Is Shown Here
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
