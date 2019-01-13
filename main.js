@@ -6,8 +6,9 @@ var showInfo = false;
 function start() {
     if (window.Worker) {
         var worker = new Worker("getData.js");
-        var ip = document.getElementById("ipToCheck").value;
-        document.getElementById("links").innerHTML = "";
+        alert("Github Does not process php pages so please clone git project and uncomment the code in main.js and you are good to go");
+        //var ip = document.getElementById("ipToCheck").value;
+        //document.getElementById("links").innerHTML = "";
         //        if (ip == "") {
         //            showInfo = true;
         //            if (confirm("This May Take A Lot Of Time")) {
@@ -47,7 +48,6 @@ function start() {
         //                ip: ip
         //            });
         //                    }
-        alert("Github Does not process php pages so please clone and uncomment the code in main.js and you are good to go");
         //        worker.onmessage = function (data) {
         //            switch (data.data.isMessageType) {
         //                case 1:
